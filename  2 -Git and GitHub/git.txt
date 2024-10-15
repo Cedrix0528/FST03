@@ -44,3 +44,6 @@ git switch [branch name]
 
 - Merging branchto the main branch
 git merge [branch_name]
+
+- Delete branch
+git branch -d [description_name]
