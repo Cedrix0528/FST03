@@ -31,3 +31,13 @@ git log
 
 -shorter history
 git log --online
+
+List all branches
+git branch -a
+
+-Create a branch
+git branch [branch name]
+
+-Switch to a different branch
+git checkout [ branch name]
+git switch [branch name]
