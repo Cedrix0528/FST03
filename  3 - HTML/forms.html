@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating forms</title>
+</head>
+<body>
+    <!-- Form is used to collect user input -->
+<h1>Creating forms</h1>
+<form action="">
+    <div> 
+        <!-- Name -->
+        <!-- for="#element-id" -->
+        <label for="fullname-id">Name:</label>
+        <input type="text" 
+        name="user-fullname" 
+        id="fullname-id" 
+        placeholder="Pangalan" required>
+    </div>
+
+    <div>
+        <!-- Email -->
+         <label for="email-id">Email:</label>
+         <input type="email" 
+         name="user-email" id="email-id" 
+         placeholder="mcedrix28@gmail.com" required>  
+    </div>
+
+    <div>
+        <!-- Password -->
+        <label for="password-id">Password:</label>
+        <input type="password" name="user-password" 
+        id="password-id" placeholder="********" required>
+    </div>
+   
+    <div>
+        <!-- Number -->
+         <label for="age-id">Age:</label>
+        <input type="number" name="user-age" 
+        id="age-id" placeholder="30" 
+        min="18" max="100">
+    </div>
+
+    <div>
+        <!-- Message -->
+         <label for="message-id">Message:</label><br>
+         <textarea name="user-message" 
+         id="message-id" cols="30" rows="5" 
+         placeholder="Anong nasa isip mo kaibigan?">
+        </textarea>
+
+        <div>
+            <!-- Drop down list -->
+             <select name="user-gender" id="gender-id">
+                <option value="" selected disabled>--Select your Gender--</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Others">Others</option>
+             </select>
+        </div>
+
+        <div>
+            <!-- ONE: limited number of choices -->
+            <input type="radio" name="profile-status" 
+            id="public-id" value="public">
+            <label for="">Public</label>
+            
+            <input type="radio" name="profile-status" 
+            id="private-id" value="private">
+            <label for="">Private</label>
+            
+            <div>
+                <!-- ZERO OR MORE: -->
+                 <input type="checkbox" name="genre" 
+                 id="thriller-id" value="thriller"> 
+                 <label for="thriller-id">Thriller</label>
+                 
+                 <input type="checkbox" name="genre" 
+                 id="anime-id" value="anime"> 
+                 <label for="anime-id">Anime</label>
+
+                 <input type="checkbox" name="genre" 
+                 id="sci-fi-id" value="sci-fi"> 
+                 <label for="sci-fi-id">Sci-Fi</label>
+            </div>
+     </div>
+     <button type="submit">Submit</button>
+     <button type="reset">Reset</button>
+</form>
+</body>
+</html>
