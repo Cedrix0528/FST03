@@ -1,0 +1,43 @@
+/* static */
+/* Elements follow the normal document flow */
+
+/* Relative */
+/* Relative to its original position */
+#relative{
+    background-color: yellow;
+    position: relative;
+    /* top, right, bottom, left */
+    top: 80px;
+    left: 10px;
+}
+
+/* absolute */
+/* Remove the element from the normal document flow */
+/* Relative to the parent container that have a position that is not static */
+#absolute{
+background-color: skyblue;
+ position: absolute; 
+ /* top, right, bottom, left */
+ bottom: 0px;
+ right: 0px;
+}
+
+/* Fixed */
+/* relative to the viewport */
+/* stays at the same place when you scroll */
+#fixed{
+    background-color: red;
+    position: fixed;
+ /* top, right, bottom, left */
+ bottom: 0px;
+ right: 0px;
+}
+
+/* sticky */
+/* Starts as relative, When it hits a certain paint it will stick to it */
+#sticky{
+    background-color: green;
+    position: sticky;
+    /* top, right, bottom, left */
+    top: 0px;   
+}
